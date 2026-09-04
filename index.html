@@ -43,8 +43,10 @@
         </div>
         <p class="supporters"><strong>0</strong> brave contributors so far</p>
 
-        <a id="paypalButton" class="donate-button" href="#" role="button">Contribute to the Ban</a>
-        <p class="payment-note">PayPal link coming next.</p>
+        <div class="paypal-wrap">
+          <div id="paypal-container-RR4NW9NZBH8E8"></div>
+        </div>
+        <p class="payment-note">Secure checkout powered by PayPal.</p>
 
         <div class="quick-amounts" aria-label="Suggested donation amounts">
           <button type="button">$5</button>
@@ -81,6 +83,12 @@
     </section>
   </main>
 
+  <script src="https://www.paypal.com/sdk/js?client-id=BAAOSX_gwhY5RFRD-7TnxHlVSEBeXB3uEgyfPAUp73a5sbkflBX1xn0l8N-nsYp1rFILwzL9k8jHVAgJvs&components=hosted-buttons&enable-funding=venmo&currency=USD"></script>
+  <script>
+    paypal.HostedButtons({
+      hostedButtonId: "RR4NW9NZBH8E8",
+    }).render("#paypal-container-RR4NW9NZBH8E8")
+  </script>
   <script src="script.js"></script>
 </body>
 </html>
